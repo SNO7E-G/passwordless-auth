@@ -1,0 +1,79 @@
+{
+  "name": "passwordless-auth",
+  "version": "1.0.0",
+  "description": "A secure and flexible library for passwordless authentication using magic links and OTPs",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "prepare": "npm run build",
+    "docs": "typedoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SNO7E-G/passwordless-auth.git"
+  },
+  "keywords": [
+    "authentication",
+    "passwordless",
+    "magic-link",
+    "otp",
+    "security",
+    "jwt",
+    "webauthn",
+    "totp"
+  ],
+  "author": "Mahmoud Ashraf (SNO7E) <https://github.com/SNO7E-G>",
+  "license": "MIT",
+  "homepage": "https://github.com/SNO7E-G/passwordless-auth",
+  "bugs": {
+    "url": "https://github.com/SNO7E-G/passwordless-auth/issues"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "joi": "^17.11.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.19.0",
+    "uuid": "^9.0.1",
+    "winston": "^3.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.17.32",
+    "@types/nodemailer": "^6.4.14",
+    "@types/react": "^18.2.56",
+    "@types/react-dom": "^18.2.19",
+    "@types/supertest": "^2.0.16",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "typedoc": "^0.25.12",
+    "typedoc-plugin-markdown": "^3.17.1"
+  }
+}

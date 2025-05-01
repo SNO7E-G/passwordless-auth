@@ -1,0 +1,21 @@
+{
+  "entryPoints": ["src/index.ts", "src/lib.ts"],
+  "out": "docs",
+  "name": "Passwordless Authentication Library",
+  "includeVersion": true,
+  "excludePrivate": true,
+  "excludeExternals": true,
+  "theme": "default",
+  "readme": "README.md",
+  "plugin": ["typedoc-plugin-markdown"],
+  "excludeInternal": true,
+  "hideGenerator": true,
+  "tsconfig": "./tsconfig.json",
+  "sort": ["visibility", "alphabetical"],
+  "categorizeByGroup": true,
+  "searchInComments": true,
+  "cleanOutputDir": true,
+  "githubPages": true,
+  "customCss": "./docs-assets/custom.css",
+  "footer": "Copyright © 2024 Mahmoud Ashraf (SNO7E). MIT License."
+} 
